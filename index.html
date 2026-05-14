@@ -308,18 +308,21 @@
 
     /* ══ VOICE ══ */
     .voice__grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:56px; margin-bottom:16px; }
-    .voice__card { background:var(--warm-white); border:1px solid var(--cream); padding:48px 40px; position:relative; }
+    .voice__card { background:var(--warm-white); border:1px solid var(--cream); padding:0 0 40px; position:relative; overflow:hidden; }
+    .voice__card-img { overflow:hidden; height:240px; margin-bottom:40px; }
+    .voice__card-img img { width:100%; height:100%; object-fit:cover; object-position:center 20%; transition:transform .5s; }
+    .voice__card:hover .voice__card-img img { transform:scale(1.03); }
     .voice__card::before {
-      content:'"'; position:absolute; top:20px; left:28px;
-      font-family:'Libre Baskerville', serif; font-size:5rem; line-height:1; color:var(--sand-light);
+      content:'"'; position:absolute; top:204px; left:28px;
+      font-family:'Libre Baskerville', serif; font-size:5rem; line-height:1; color:var(--sand-light); z-index:1;
     }
-    .voice__meta { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
+    .voice__meta { display:flex; align-items:center; gap:10px; margin-bottom:20px; padding:0 40px; }
     .voice__meta-tag {
       background:var(--cream); font-size:.62rem; letter-spacing:.15em;
       color:var(--navy); padding:3px 12px; font-weight:500;
     }
-    .voice__title { font-family:'Shippori Mincho B1', serif; font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:16px; line-height:1.6; }
-    .voice__text { font-size:.82rem; color:var(--text-mid); line-height:2.1; }
+    .voice__title { font-family:'Shippori Mincho B1', serif; font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:16px; line-height:1.6; padding:0 40px; }
+    .voice__text { font-size:.82rem; color:var(--text-mid); line-height:2.1; padding:0 40px; }
     .voice__note { font-size:.7rem; color:var(--text-light); text-align:center; margin-top:8px; }
 
     /* ══ PRICE ══ */
@@ -511,7 +514,7 @@
 
     <!-- 靴持参イメージ写真 -->
     <div class="shoes-photo reveal">
-      <img src="shoes.png" alt="お客様がお持ちいただいた靴を並べた様子">
+      <img src="shoes_lineup.png" alt="お客様がお持ちいただいた靴を並べた様子">
       <div class="shoes-photo__caption">
         <div class="shoes-photo__caption-title">「どれも大切な靴だけど、<br>どれが本当に合っているか<br>わからなくて…」</div>
         <p class="shoes-photo__caption-text">そんなお声をよくいただきます。<br>靴は何足でもお持ちください。<br>1足ずつ、丁寧にお答えします。</p>
@@ -594,6 +597,9 @@
     </div>
     <div class="voice__grid">
       <div class="voice__card reveal reveal--d1">
+        <div class="voice__card-img">
+          <img src="IMG_1029.jpg" alt="ベージュパンプスを履いた女性の足元">
+        </div>
         <div class="voice__meta">
           <span class="voice__meta-tag">30代女性</span>
           <span class="voice__meta-tag">直せる靴に分類</span>
@@ -602,6 +608,9 @@
         <p class="voice__text">デザインが好きで買ったものの、痛くて履けなかったパンプス。診断の結果「直せる靴」に分類され、プロに調整してもらったところ、嘘みたいに歩きやすくなりました！</p>
       </div>
       <div class="voice__card reveal reveal--d2">
+        <div class="voice__card-img">
+          <img src="IMG_1004.jpg" alt="黒ローファーを履いた女性の足元">
+        </div>
         <div class="voice__meta">
           <span class="voice__meta-tag">50代女性</span>
           <span class="voice__meta-tag">スッキリ整理</span>
