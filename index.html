@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>お手持ちの靴 評価・仕分けアドバイス | 足と靴の専門店 LADIES'KID</title>
+  <meta name="description" content="「痛い・脱げる・歩きづらい」靴でお悩みの方へ。専門資格を持ったシューフィッターが、バイオメカニクスの視点からあなたの靴を1足ずつ評価。靴診断 基本料1足¥1,500（+税）。無料相談受付中。">
+  <meta name="keywords" content="靴診断,シューフィッター,靴擦れ,靴が痛い,かかと脱げ,下駄箱,靴の整理,レディースキッド,LADIES'KID,バイオメカニクス,靴仕分け">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ladieskid.jp/shoes-assessment">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="「捨てどき」より、「直しどき」かもしれない。| LADIES'KID">
+  <meta property="og:description" content="痛い・脱げる靴。プロが診たら、まだ履ける靴だったかもしれません。靴診断1足¥1,500〜。">
+  <meta property="og:url" content="https://ladieskid.jp/shoes-assessment">
+  <meta property="og:site_name" content="LADIES'KID">
+  <meta property="og:image" content="https://ladieskid.jp/assets/images/fitting.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="「捨てどき」より、「直しどき」かもしれない。| LADIES'KID">
+  <meta name="twitter:description" content="痛い・脱げる靴。プロが診たら、まだ履ける靴だったかもしれません。">
+  <meta name="twitter:image" content="https://ladieskid.jp/assets/images/fitting.jpg">
+
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ShoeStore",
+    "name": "LADIES'KID",
+    "url": "https://ladieskid.jp/",
+    "description": "専門資格を持ったシューフィッターが在籍する足と靴の専門店",
+    "address": { "@type": "PostalAddress", "addressCountry": "JP" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "お手持ちの靴 評価・仕分けアドバイス",
+      "itemListElement": [{
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "靴の評価・仕分けアドバイス",
+          "description": "専門スタッフがお手持ちの靴を1足ずつ評価し、履ける・直せる・手放すに仕分けします"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "1500",
+          "priceCurrency": "JPY",
+          "description": "靴診断 基本料（1足）税別"
+        }
+      }]
+    }
+  }
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+    function trackCTA(label) {
+      gtag('event', 'click_cta', { event_category: 'conversion', event_label: label });
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy:       #1C2B45;
+      --navy-deep:  #111C2E;
+      --navy-mid:   #2A3F62;
+      --navy-light: #3D5A8A;
+      --sky:        #7A9CC8;
+      --off-white:  #F8F6F2;
+      --cream:      #EEE9E1;
+      --warm-white: #FDFCFA;
+      --sand:       #C8B89A;
+      --sand-light: #E8DDD0;
+      --text:       #1C1C1C;
+      --text-mid:   #4A4845;
+      --text-light: #7A7570;
+      --rule:       rgba(28,43,69,0.12);
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      background:var(--warm-white); color:var(--text);
+      font-family:'Noto Sans JP', sans-serif; font-weight:300;
+      line-height:1.8; overflow-x:hidden;
+    }
+    img { display:block; max-width:100%; }
+    a { text-decoration:none; color:inherit; }
+
+    /* ─── HEADER ─── */
+    .site-header {
+      position:sticky; top:0; z-index:200;
+      background:var(--warm-white); border-bottom:1px solid var(--rule);
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 48px; height:72px;
+    }
+    .site-header__logo img {
+      height:36px; width:auto;
+      /* ロゴが黒背景用なのでdark版を反転させない — 白背景に合わせる */
+      filter: invert(0);
+    }
+    .site-header__cta {
+      background:var(--navy); color:#fff;
+      font-size:.75rem; font-weight:500; letter-spacing:.12em;
+      padding:12px 28px; transition:background .25s; white-space:nowrap;
+    }
+    .site-header__cta:hover { background:var(--navy-mid); }
+
+    /* ─── LAYOUT ─── */
+    .s { padding:100px 0; }
+    .s--dark  { background:var(--navy-deep); color:#fff; }
+    .s--cream { background:var(--cream); }
+    .s--navy  { background:var(--navy); color:#fff; }
+    .container { max-width:1080px; margin:0 auto; padding:0 48px; }
+
+    /* ─── EYEBROW ─── */
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:12px;
+      font-size:.65rem; font-weight:500; letter-spacing:.3em; text-transform:uppercase;
+      color:var(--navy-light); margin-bottom:20px;
+    }
+    .eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--sand); }
+    .s--dark .eyebrow, .s--navy .eyebrow { color:var(--sky); }
+    .s--dark .eyebrow::before, .s--navy .eyebrow::before { background:var(--sky); }
+
+    /* ─── TYPE ─── */
+    .h2 {
+      font-family:'Shippori Mincho B1', serif;
+      font-size:clamp(1.7rem,2.8vw,2.5rem);
+      font-weight:700; line-height:1.45;
+    }
+    .h-accent { color:var(--navy); }
+    .s--dark .h-accent, .s--navy .h-accent { color:var(--sky); }
+
+    /* ─── BUTTONS ─── */
+    .btn {
+      display:inline-flex; align-items:center; gap:10px;
+      font-size:.82rem; font-weight:500; letter-spacing:.12em;
+      padding:16px 40px; transition:background .25s, transform .25s;
+    }
+    .btn::after { content:'→'; }
+    .btn--primary { background:var(--navy); color:#fff; }
+    .btn--primary:hover { background:var(--navy-mid); transform:translateY(-2px); }
+    .btn--white { background:#fff; color:var(--navy); }
+    .btn--white:hover { background:var(--off-white); transform:translateY(-2px); }
+
+    /* ══ FV ══ */
+    .fv {
+      min-height:92vh;
+      display:grid; grid-template-columns:1fr 1fr; align-items:stretch;
+    }
+    .fv__text {
+      background:var(--navy-deep); color:#fff;
+      display:flex; flex-direction:column; justify-content:center;
+      padding:80px 64px; position:relative; overflow:hidden;
+    }
+    .fv__text::before {
+      content:''; position:absolute; top:0; left:0;
+      width:4px; height:100%;
+      background:linear-gradient(to bottom, var(--sand), transparent 60%);
+    }
+    .fv__kicker {
+      font-size:.68rem; letter-spacing:.3em; color:var(--sand); margin-bottom:32px;
+      display:flex; align-items:center; gap:12px;
+    }
+    .fv__kicker::before { content:''; display:block; width:24px; height:1px; background:var(--sand); }
+    .fv__title {
+      font-family:'Shippori Mincho B1', serif;
+      font-size:clamp(2rem,3.5vw,3.2rem); font-weight:800; line-height:1.4; margin-bottom:32px;
+    }
+    .fv__title .large { font-size:1.15em; display:block; color:var(--sky); font-style:italic; }
+    .fv__sub { font-size:.9rem; line-height:2.1; color:rgba(255,255,255,.65); max-width:400px; margin-bottom:48px; }
+    .fv__concept {
+      margin-top:56px; padding-top:32px; border-top:1px solid rgba(255,255,255,.1);
+      font-family:'Libre Baskerville', serif; font-style:italic;
+      font-size:1.05rem; color:var(--sand); line-height:1.7;
+    }
+    .fv__concept small {
+      display:block; font-family:'Noto Sans JP', sans-serif; font-style:normal;
+      font-size:.62rem; letter-spacing:.2em; color:rgba(255,255,255,.4); margin-top:6px;
+    }
+    .fv__image { position:relative; overflow:hidden; background:var(--cream); }
+    .fv__image img { width:100%; height:100%; object-fit:cover; }
+    .fv__badge {
+      position:absolute; bottom:32px; left:32px; background:#fff;
+      padding:18px 22px; box-shadow:0 8px 32px rgba(0,0,0,.14); max-width:210px;
+    }
+    .fv__badge-label { font-size:.58rem; letter-spacing:.2em; color:var(--navy-light); margin-bottom:5px; }
+    .fv__badge-text {
+      font-family:'Shippori Mincho B1', serif; font-size:.88rem; font-weight:700;
+      color:var(--navy); line-height:1.5;
+    }
+    .fv__badge-logo {
+      margin-top:10px; padding-top:10px; border-top:1px solid var(--rule);
+    }
+    .fv__badge-logo img { height:20px; width:auto; }
+
+    /* ══ PAIN ══ */
+    .pain { background:var(--off-white); }
+    .pain__grid {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:2px; background:var(--rule); margin:56px 0;
+    }
+    .pain__card { background:var(--warm-white); padding:52px 36px; transition:box-shadow .3s; }
+    .pain__card:hover { box-shadow:0 16px 48px rgba(28,43,69,.08); z-index:1; }
+    .pain__card-num {
+      font-family:'Libre Baskerville', serif; font-size:4.5rem; font-weight:700;
+      color:var(--sand-light); line-height:1; margin-bottom:20px;
+    }
+    .pain__card-icon { font-size:2rem; margin-bottom:16px; }
+    .pain__card-title {
+      font-family:'Shippori Mincho B1', serif; font-size:1rem; font-weight:700;
+      color:var(--navy); margin-bottom:14px; line-height:1.6;
+    }
+    .pain__card-text { font-size:.8rem; color:var(--text-light); line-height:2.1; }
+    .pain__card-text em { font-style:normal; color:var(--text-mid); font-weight:500; }
+    .pain__message {
+      background:var(--navy); color:#fff;
+      padding:36px 52px; display:flex; align-items:center; gap:24px;
+    }
+    .pain__message-icon { font-size:2rem; flex-shrink:0; }
+    .pain__message-text {
+      font-family:'Shippori Mincho B1', serif; font-size:1.05rem; font-weight:600; line-height:1.8;
+    }
+    .pain__message-text strong { color:var(--sky); }
+
+    /* 靴持参写真 */
+    .shoes-photo {
+      margin-top:48px;
+      display:grid; grid-template-columns:1fr 1fr; gap:2px; background:var(--rule);
+    }
+    .shoes-photo img { width:100%; height:300px; object-fit:cover; }
+    .shoes-photo__caption {
+      background:var(--navy-deep); color:#fff; padding:40px 44px;
+      display:flex; flex-direction:column; justify-content:center;
+    }
+    .shoes-photo__caption-title {
+      font-family:'Shippori Mincho B1', serif; font-size:1.15rem; font-weight:700;
+      margin-bottom:12px; line-height:1.6;
+    }
+    .shoes-photo__caption-text { font-size:.82rem; color:rgba(255,255,255,.65); line-height:2; }
+
+    /* ══ SORT ══ */
+    .sort__lead { font-size:.9rem; color:var(--text-mid); line-height:2.1; max-width:560px; margin-top:16px; }
+    .sort__boxes { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin:48px 0; }
+    .sort__box {
+      padding:52px 36px 44px; border-top:4px solid transparent;
+      transition:transform .3s, box-shadow .3s;
+    }
+    .sort__box:hover { transform:translateY(-4px); box-shadow:0 20px 48px rgba(0,0,0,.08); }
+    .sort__box--a { background:#F0F7EE; border-color:#5A9E55; }
+    .sort__box--b { background:#EEF3FB; border-color:var(--navy-light); }
+    .sort__box--c { background:#FBF0EE; border-color:#C0614A; }
+    .sort__box-icon { font-size:2.8rem; margin-bottom:20px; }
+    .sort__box-tag {
+      display:inline-block; font-size:.62rem; letter-spacing:.2em; font-weight:500;
+      padding:3px 14px; margin-bottom:16px;
+    }
+    .sort__box--a .sort__box-tag { background:#5A9E55; color:#fff; }
+    .sort__box--b .sort__box-tag { background:var(--navy-light); color:#fff; }
+    .sort__box--c .sort__box-tag { background:#C0614A; color:#fff; }
+    .sort__box-title {
+      font-family:'Shippori Mincho B1', serif; font-size:1.2rem; font-weight:800; margin-bottom:12px;
+    }
+    .sort__box--a .sort__box-title { color:#3A7A35; }
+    .sort__box--b .sort__box-title { color:var(--navy); }
+    .sort__box--c .sort__box-title { color:#9A3A2A; }
+    .sort__box-desc { font-size:.8rem; color:var(--text-mid); line-height:2.1; }
+    .sort__note { background:var(--cream); border-left:4px solid var(--sand); padding:28px 36px; }
+    .sort__note p { font-size:.87rem; color:var(--text); line-height:2.1; }
+    .sort__note strong { color:var(--navy); font-weight:600; }
+
+    /* ══ STRENGTHS ══ */
+    .strength__grid {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:2px; background:rgba(255,255,255,.08); margin-top:56px;
+    }
+    .strength__card { background:var(--navy-mid); padding:56px 48px; position:relative; overflow:hidden; }
+    .strength__card::before {
+      content:attr(data-num); position:absolute; top:-16px; right:16px;
+      font-family:'Libre Baskerville', serif; font-size:8rem; font-weight:700;
+      color:rgba(255,255,255,.04); line-height:1;
+    }
+    .strength__tag {
+      display:inline-block; border:1px solid var(--sky); color:var(--sky);
+      font-size:.6rem; letter-spacing:.25em; padding:4px 14px; margin-bottom:24px;
+    }
+    .strength__title {
+      font-family:'Shippori Mincho B1', serif; font-size:1.1rem; font-weight:700;
+      color:#fff; line-height:1.6; margin-bottom:20px;
+    }
+    .strength__text { font-size:.83rem; color:rgba(255,255,255,.65); line-height:2.2; }
+    .strength__text em { font-style:normal; color:var(--sky); font-weight:500; }
+    .strength__photo {
+      margin-top:28px; overflow:hidden;
+    }
+    .strength__photo img { width:100%; height:220px; object-fit:cover; }
+
+    /* ══ VOICE ══ */
+    .voice__grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:56px; margin-bottom:16px; }
+    .voice__card { background:var(--warm-white); border:1px solid var(--cream); padding:48px 40px; position:relative; }
+    .voice__card::before {
+      content:'"'; position:absolute; top:20px; left:28px;
+      font-family:'Libre Baskerville', serif; font-size:5rem; line-height:1; color:var(--sand-light);
+    }
+    .voice__meta { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
+    .voice__meta-tag {
+      background:var(--cream); font-size:.62rem; letter-spacing:.15em;
+      color:var(--navy); padding:3px 12px; font-weight:500;
+    }
+    .voice__title { font-family:'Shippori Mincho B1', serif; font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:16px; line-height:1.6; }
+    .voice__text { font-size:.82rem; color:var(--text-mid); line-height:2.1; }
+    .voice__note { font-size:.7rem; color:var(--text-light); text-align:center; margin-top:8px; }
+
+    /* ══ PRICE ══ */
+    .price__card {
+      max-width:720px; margin:56px auto 0; background:var(--warm-white);
+      border:1px solid var(--cream); box-shadow:0 4px 40px rgba(28,43,69,.06);
+      padding:64px 72px;
+    }
+    .price__name {
+      font-family:'Shippori Mincho B1', serif; font-size:1.15rem; font-weight:700;
+      color:var(--navy); margin-bottom:36px; text-align:center;
+    }
+    .price__table { width:100%; border-collapse:collapse; margin-bottom:28px; }
+    .price__table thead th {
+      background:var(--navy); color:#fff;
+      font-size:.72rem; font-weight:500; letter-spacing:.15em;
+      padding:12px 20px; text-align:left;
+    }
+    .price__table tbody tr { border-bottom:1px solid var(--cream); }
+    .price__table tbody tr:last-child { border-bottom:none; }
+    .price__table td {
+      padding:20px; font-size:.9rem; vertical-align:middle;
+    }
+    .price__table td:last-child {
+      font-family:'Shippori Mincho B1', serif; font-weight:700;
+      color:var(--navy); text-align:right; font-size:1rem; white-space:nowrap;
+    }
+    .price__notes {
+      background:var(--cream); padding:20px 24px;
+      font-size:.75rem; color:var(--text-light); line-height:2.1;
+    }
+    .price__notes li { list-style:none; padding-left:1em; position:relative; }
+    .price__notes li::before { content:'※'; position:absolute; left:0; }
+
+    /* ══ COMPANY ══ */
+    .company__inner { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; margin-top:56px; }
+    .company__table { width:100%; border-collapse:collapse; }
+    .company__table tr { border-bottom:1px solid rgba(255,255,255,.1); }
+    .company__table th, .company__table td { padding:16px 0; font-size:.83rem; text-align:left; vertical-align:top; }
+    .company__table th { width:36%; color:var(--sky); letter-spacing:.1em; font-weight:500; }
+    .company__table td { color:rgba(255,255,255,.75); line-height:1.9; }
+    .company__image { overflow:hidden; }
+    .company__image img { width:100%; height:320px; object-fit:cover; }
+    .company__image-caption {
+      padding:16px 0; font-size:.72rem; color:rgba(255,255,255,.4);
+      letter-spacing:.1em; text-align:center;
+    }
+
+    /* ══ CTA ══ */
+    .cta { position:relative; overflow:hidden; text-align:center; padding:120px 48px; }
+    .cta::before {
+      content:'SHOES'; position:absolute; top:50%; left:50%;
+      transform:translate(-50%,-50%);
+      font-family:'Libre Baskerville', serif; font-size:22vw; font-weight:700;
+      color:rgba(255,255,255,.03); white-space:nowrap; pointer-events:none;
+    }
+    .cta > * { position:relative; }
+    .cta__micro { font-family:'Shippori Mincho B1', serif; font-size:1.05rem; color:rgba(255,255,255,.55); margin-bottom:24px; line-height:1.8; }
+    .cta__title { font-family:'Shippori Mincho B1', serif; font-size:clamp(2rem,4vw,3.4rem); font-weight:800; color:#fff; line-height:1.4; margin-bottom:24px; }
+    .cta__title span { color:var(--sky); }
+    .cta__sub { color:rgba(255,255,255,.55); font-size:.88rem; line-height:2.1; margin-bottom:52px; max-width:520px; margin-left:auto; margin-right:auto; }
+    .cta__note { margin-top:20px; font-size:.68rem; color:rgba(255,255,255,.35); letter-spacing:.1em; }
+
+    /* ══ SHARE ══ */
+    .share { background:var(--cream); padding:64px 48px; text-align:center; }
+    .share__concept { font-family:'Shippori Mincho B1', serif; font-size:clamp(1.4rem,2.5vw,2rem); font-weight:800; color:var(--navy); margin-bottom:8px; line-height:1.5; }
+    .share__concept-en { font-family:'Libre Baskerville', serif; font-style:italic; font-size:1rem; color:var(--sand); margin-bottom:32px; }
+    .share__desc { font-size:.82rem; color:var(--text-mid); margin-bottom:32px; line-height:2; max-width:480px; margin-left:auto; margin-right:auto; }
+    .share__btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .share__btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; font-size:.78rem; font-weight:500; letter-spacing:.1em; border:1.5px solid; transition:background .2s, color .2s; }
+    .share__btn--x { border-color:var(--navy); color:var(--navy); }
+    .share__btn--x:hover { background:var(--navy); color:#fff; }
+    .share__btn--line { border-color:#00B900; color:#00B900; }
+    .share__btn--line:hover { background:#00B900; color:#fff; }
+
+    /* ══ FOOTER ══ */
+    .site-footer {
+      background:var(--navy-deep); padding:48px 56px;
+      display:flex; justify-content:space-between; align-items:center;
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+    .site-footer__logo img { height:28px; width:auto; filter:brightness(0) invert(1) opacity(.6); }
+    .site-footer__copy { font-size:.65rem; color:rgba(255,255,255,.3); letter-spacing:.15em; }
+
+    /* ══ REVEAL ══ */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity .75s ease, transform .75s ease; }
+    .reveal.is-visible { opacity:1; transform:translateY(0); }
+    .reveal--d1 { transition-delay:.1s; }
+    .reveal--d2 { transition-delay:.2s; }
+    .reveal--d3 { transition-delay:.3s; }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width:900px) {
+      .site-header { padding:0 20px; height:60px; }
+      .site-header__logo img { height:28px; }
+      .fv { grid-template-columns:1fr; min-height:auto; }
+      .fv__text { padding:80px 24px 56px; order:2; }
+      .fv__image { order:1; min-height:260px; }
+      .container { padding:0 24px; }
+      .s { padding:72px 0; }
+      .pain__grid { grid-template-columns:1fr; }
+      .pain__message { flex-direction:column; padding:32px 24px; text-align:center; }
+      .shoes-photo { grid-template-columns:1fr; }
+      .sort__boxes { grid-template-columns:1fr; }
+      .strength__grid { grid-template-columns:1fr; }
+      .voice__grid { grid-template-columns:1fr; }
+      .company__inner { grid-template-columns:1fr; gap:40px; }
+      .price__card { padding:40px 24px; }
+      .cta { padding:80px 24px; }
+      .site-footer { flex-direction:column; gap:20px; text-align:center; padding:40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="https://ladieskid.jp/" class="site-header__logo">
+    <img src="assets/images/logo.png" alt="LADIES'KID SHOE SHOP">
+  </a>
+  <a href="https://ladieskid.jp/reserve_helpservice" class="site-header__cta" onclick="trackCTA('header')">プロの靴診断を予約する</a>
+</header>
+
+
+<!-- ① ATTENTION — FV -->
+<div class="fv">
+  <div class="fv__text">
+    <div class="fv__kicker">お手持ちの靴 評価・仕分けアドバイス</div>
+    <h1 class="fv__title">
+      <span class="large">「捨てどき」より、<br>「直しどき」<br>かもしれない。</span>
+    </h1>
+    <p class="fv__sub">
+      痛い・脱げる靴。<br>
+      プロが診たら、まだ履ける靴だったかもしれません。<br>
+      <span style="opacity:.75;">大切な1足を、一緒に見極めます。</span>
+    </p>
+    <a href="https://ladieskid.jp/reserve_helpservice" class="btn btn--white" onclick="trackCTA('hero')">プロの靴診断を予約する</a>
+    <div class="fv__concept">
+      "Maybe it's not time to let go —<br>maybe it's time to fix."
+      <small>— お気に入りを、諦めなくていい。</small>
+    </div>
+  </div>
+  <div class="fv__image">
+    <img src="assets/images/fitting.jpg" alt="シューフィッターが女性のパンプスをフィッティング確認している様子">
+    <div class="fv__badge">
+      <div class="fv__badge-label">Specialist Staff</div>
+      <div class="fv__badge-text">専門資格スタッフが<br>バイオメカニクスで評価</div>
+      <div class="fv__badge-logo">
+        <img src="assets/images/logomark.png" alt="LADIES'KID">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ② INTEREST — 共感ブロック -->
+<section class="s pain">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Interest — あるある悩み</div>
+      <h2 class="h2">シューズクローゼットに、<br>こんな<span style="border-bottom:2px solid var(--sand)">「眠っている靴」</span>はありませんか？</h2>
+    </div>
+    <div class="pain__grid">
+      <div class="pain__card reveal reveal--d1">
+        <div class="pain__card-num">01</div>
+        <div class="pain__card-icon">🩹</div>
+        <div class="pain__card-title">サイズは合っているはずなのに<br>なぜか痛い靴</div>
+        <p class="pain__card-text">「お店で試着したときは<em>ピッタリだった</em>のに、いざ歩くと指先や側面が痛くなる…なぜ？」</p>
+      </div>
+      <div class="pain__card reveal reveal--d2">
+        <div class="pain__card-num">02</div>
+        <div class="pain__card-icon">🚶‍♀️</div>
+        <div class="pain__card-title">かかとがパカパカ脱げて<br>歩きづらい靴</div>
+        <p class="pain__card-text">「歩くたびにかかとが抜けてしまい、<em>足元が不安定</em>で疲れてしまう…」</p>
+      </div>
+      <div class="pain__card reveal reveal--d3">
+        <div class="pain__card-num">03</div>
+        <div class="pain__card-icon">💸</div>
+        <div class="pain__card-title">高かったから…と処分に<br>踏ん切りがつかない靴</div>
+        <p class="pain__card-text">「履かない靴でクローゼットがいっぱい。<em>もったいなくて捨てられない</em>…でも履かない。」</p>
+      </div>
+    </div>
+    <div class="pain__message reveal">
+      <div class="pain__message-icon">💬</div>
+      <div class="pain__message-text">
+        「本当に合っている靴なのか」気になる方も、<strong>「処分に踏ん切りがつかない」</strong>という方も、<br>私たちが一緒に<strong>解決の糸口</strong>を見つけます。
+      </div>
+    </div>
+
+    <!-- 靴持参イメージ写真 -->
+    <div class="shoes-photo reveal">
+      <img src="assets/images/shoes_lineup.png" alt="お客様がお持ちいただいた靴を並べた様子">
+      <div class="shoes-photo__caption">
+        <div class="shoes-photo__caption-title">「どれも大切な靴だけど、<br>どれが本当に合っているか<br>わからなくて…」</div>
+        <p class="shoes-photo__caption-text">そんなお声をよくいただきます。<br>靴は何足でもお持ちください。<br>1足ずつ、丁寧にお答えします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ③ DESIRE — サービス内容（仕分け） -->
+<section class="s">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Desire — サービス内容</div>
+      <h2 class="h2">プロの目線で「<span class="h-accent">1足ずつ</span>」徹底評価。<br>あなたの靴を3つに仕分けします。</h2>
+      <p class="sort__lead">ご持参いただいた靴が足に合っているか、専門スタッフが評価いたします。このまま履き続けるべきか、手放すべきかのアドバイスを1足ずつ丁寧に行います。</p>
+    </div>
+    <div class="sort__boxes">
+      <div class="sort__box sort__box--a reveal reveal--d1">
+        <div class="sort__box-icon">✅</div>
+        <div class="sort__box-tag">履ける靴</div>
+        <div class="sort__box-title">そのまま履き続けられる！</div>
+        <p class="sort__box-desc">あなたの足に合っている靴。正しい履き方・ケアの方法をお伝えします。</p>
+      </div>
+      <div class="sort__box sort__box--b reveal reveal--d2">
+        <div class="sort__box-icon">🔧</div>
+        <div class="sort__box-tag">直せる靴</div>
+        <div class="sort__box-title">調整で蘇る可能性がある！</div>
+        <p class="sort__box-desc">インソール調整や工夫次第で、痛みをなくして履けるようになる靴。</p>
+      </div>
+      <div class="sort__box sort__box--c reveal reveal--d3">
+        <div class="sort__box-icon">🗂️</div>
+        <div class="sort__box-tag">手放す靴</div>
+        <div class="sort__box-title">スッキリ、手放そう。</div>
+        <p class="sort__box-desc">骨格や足の動きに致命的に合っておらず、足のトラブル（外反母趾など）の原因になる靴。</p>
+      </div>
+    </div>
+    <div class="sort__note reveal">
+      <p><strong>なぜ合わないのか</strong>、専門的な視点（曲がる位置のズレ・かかとの抜け・つま先の圧迫など）から分かりやすく理由をお伝えします。「なんとなく合わない気がする…」が、スッキリ解決します。</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 専門性 STRENGTHS -->
+<section class="s s--navy">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Our Strengths</div>
+      <h2 class="h2">なぜ「直せる・手放す」が<br><span style="color:var(--sky)">的確に判断</span>できるのか？<br>当店の2つの強み</h2>
+    </div>
+    <div class="strength__grid">
+      <div class="strength__card reveal" data-num="01">
+        <div class="strength__tag">Strength 01</div>
+        <div class="strength__title">専門資格を持った<br>プロフェッショナルなスタッフ</div>
+        <p class="strength__text">足に関する基礎知識と靴合わせの技能を習得した<em>専門スタッフ</em>が対応します。<br><br>単なるサイズ測定ではなく、足の疾病予防の観点から本当に足に合う靴を見極めます。「なんとなく痛い」を、根拠とともに解決します。</p>
+        <div class="strength__photo">
+          <img src="assets/images/fitting.jpg" alt="スタッフが丁寧に靴のフィッティングを確認している">
+        </div>
+      </div>
+      <div class="strength__card reveal reveal--d2" data-num="02">
+        <div class="strength__tag">Strength 02</div>
+        <div class="strength__title">バイオメカニクス（生体力学）に<br>基づく動作分析</div>
+        <p class="strength__text">「サイズが合っていても痛い」のは、<em>足が自然に曲がる位置と靴の屈曲点がズレている</em>から。<br><br>静止状態だけでなく、歩くときの骨格の動きや関節の可動域を踏まえた「バイオメカニクス」の視点から評価します。</p>
+        <div class="strength__photo">
+          <img src="assets/images/measurement.jpg" alt="専門器具で足のサイズを精密計測している様子">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- DESIRE — お客様の声 -->
+<section class="s">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Customer Voice</div>
+      <h2 class="h2">ご利用いただいたお客様の声</h2>
+    </div>
+    <div class="voice__grid">
+      <div class="voice__card reveal reveal--d1">
+        <div class="voice__meta">
+          <span class="voice__meta-tag">30代女性</span>
+          <span class="voice__meta-tag">直せる靴に分類</span>
+        </div>
+        <div class="voice__title">「捨てるしかないと思っていた<br>パンプスが復活しました！」</div>
+        <p class="voice__text">デザインが好きで買ったものの、痛くて履けなかったパンプス。診断の結果「直せる靴」に分類され、プロに調整してもらったところ、嘘みたいに歩きやすくなりました！</p>
+      </div>
+      <div class="voice__card reveal reveal--d2">
+        <div class="voice__meta">
+          <span class="voice__meta-tag">50代女性</span>
+          <span class="voice__meta-tag">スッキリ整理</span>
+        </div>
+        <div class="voice__title">「下駄箱も心もスッキリ！<br>納得して手放せました」</div>
+        <p class="voice__text">いつか履くかも…と何年も眠っていた靴たち。なぜ私の足に合わないのか、骨格の動きから論理的に説明していただき、スッキリと処分する決心がつきました。</p>
+      </div>
+    </div>
+    <p class="voice__note">※ 事例テキストはダミーです。実際のお客様の声に差し替えてください。</p>
+  </div>
+</section>
+
+
+<!-- PRICE -->
+<section class="s s--cream">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Menu & Price</div>
+      <h2 class="h2">メニュー詳細</h2>
+    </div>
+    <div class="price__card reveal">
+      <div class="price__name">お手持ちの靴 評価・仕分けアドバイス</div>
+      <table class="price__table">
+        <thead>
+          <tr>
+            <th>メニュー</th>
+            <th style="text-align:right;">料金（税別）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>靴診断（基本料 1足）</td>
+            <td>¥1,500</td>
+          </tr>
+          <tr>
+            <td>2足目以降（1足につき）</td>
+            <td>¥500</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="price__notes">
+        <li>調整料：一部有料パーツあり</li>
+        <li>お時間は足数によって30分〜1時間程度。インソール・調整は内容によりお時間頂きます。</li>
+        <li>調整しても合わない場合には、調整料金は頂きません。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- COMPANY -->
+<section class="s s--dark">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">About Us</div>
+      <h2 class="h2" style="color:#fff;">会社概要</h2>
+    </div>
+    <div class="company__inner">
+      <div class="reveal">
+        <table class="company__table">
+          <tr><th>店舗名</th><td>LADIES'KID（レディースキッド）</td></tr>
+          <tr><th>運営会社</th><td>株式会社キッド</td></tr>
+          <tr><th>本社所在地</th><td>〒171-0022<br>東京都豊島区南池袋2-5-5</td></tr>
+          <tr><th>池袋本店</th><td>東京都豊島区南池袋1-23-7<br>池袋駅東口より徒歩1〜2分</td></tr>
+          <tr><th>TEL</th><td>03-3981-3456</td></tr>
+          <tr><th>FAX</th><td>03-3989-1269</td></tr>
+          <tr><th>設立</th><td>1950年（創業60年以上）</td></tr>
+          <tr><th>代表取締役</th><td>小堤 啓史</td></tr>
+          <tr><th>公式サイト</th><td>https://ladieskid.jp/</td></tr>
+          <tr><th>サービス</th><td>足と靴の専門診断<br>インソール調整・靴合わせ<br>靴の評価・仕分けアドバイス</td></tr>
+        </table>
+      </div>
+      <div class="reveal reveal--d2">
+        <div class="company__image">
+          <img src="assets/images/measurement2.jpg" alt="専門スタッフが足の計測をしている様子">
+        </div>
+        <p class="company__image-caption">専門器具を使った精密な足計測</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ④ ACTION — クロージング CTA -->
+<section class="s s--navy cta">
+  <div class="eyebrow" style="justify-content:center;">Action</div>
+  <p class="cta__micro">
+    お気に入りの靴が<br>足に合っているか見てほしい
+  </p>
+  <h2 class="cta__title">
+    痛い靴を我慢するのは、<br><span>もう終わりに</span>しませんか？
+  </h2>
+  <p class="cta__sub">
+    「捨てられない」も「痛くて履けない」も、一緒に解決します。<br>
+    専門スタッフが1足ずつ、丁寧にお答えします。<br>
+    まずは、お気軽にご相談ください。
+  </p>
+  <a href="https://ladieskid.jp/reserve_helpservice" class="btn btn--white" onclick="trackCTA('cta_bottom')">
+    ご予約はこちらから
+  </a>
+  <p class="cta__note">ご予約後、確認メールをお送りします</p>
+</section>
+
+
+<!-- SHARE — AISAS の S -->
+<section class="share">
+  <div class="share__concept">「靴は、足の鏡だ。」</div>
+  <div class="share__concept-en">"A shoe is a mirror of your foot."</div>
+  <p class="share__desc">
+    このサービスを知って「あ、私も！」と思った方へ。<br>
+    同じ悩みを持つ友人にシェアしてみませんか？
+  </p>
+  <div class="share__btns">
+    <a href="https://twitter.com/intent/tweet?text=%E3%80%8C%E6%8D%A8%E3%81%A6%E3%81%A9%E3%81%8D%E3%80%8D%E3%82%88%E3%82%8A%E3%80%81%E3%80%8C%E7%9B%B4%E3%81%97%E3%81%A9%E3%81%8D%E3%80%8D%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84%E3%80%82+%23LADIESKID+%23%E9%9D%B4%E8%A8%BA%E6%96%AD&url=https://ladieskid.jp/shoes-assessment"
+       target="_blank" rel="noopener" class="share__btn share__btn--x">𝕏 でシェアする</a>
+    <a href="https://line.me/R/msg/text/?%E3%80%8C%E6%8D%A8%E3%81%A6%E3%81%A9%E3%81%8D%E3%80%8D%E3%82%88%E3%82%8A%E3%80%81%E3%80%8C%E7%9B%B4%E3%81%97%E3%81%A9%E3%81%8D%E3%80%8D%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84%E3%80%82%20https://ladieskid.jp/shoes-assessment"
+       target="_blank" rel="noopener" class="share__btn share__btn--line">LINE でシェアする</a>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="site-footer__logo">
+    <img src="assets/images/logo.png" alt="LADIES'KID SHOE SHOP">
+  </div>
+  <p class="site-footer__copy">© 2025 LADIES'KID. All Rights Reserved.</p>
+</footer>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  els.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
